@@ -10,6 +10,13 @@ import { Component } from '@angular/core';
 })
 
 export class ParentComponent {
+
   childTitle: string = 'Text passed to child';
+  passedString: string = '';
+
+  onNotify(notify: string) {
+    this.passedString = notify;
+
+  }
 
 }

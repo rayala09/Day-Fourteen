@@ -2,4 +2,6 @@
   I'm a Container Component
 </h1>
 
-<app-child-component [title]="childTitle"></app-child-component>
+<app-child-component [title]="childTitle" (notify) = "onNotify($event)" ></app-child-component>
+
+{{passedString}}
